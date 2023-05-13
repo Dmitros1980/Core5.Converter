@@ -27,8 +27,7 @@ public class Main {
     public static void main(String[] args) throws IOException, SAXException, ParserConfigurationException, TransformerException {
         System.out.println("Hello world!");
         String[] columnMapping = {"id", "firstName", "lastName", "country", "age"};
-        String fileName2 = "data.xml";
-        String fileName5 = "data2.xml";
+        String fileName2 = "src/main/java/org/example/data.xml";
         String fileName3="data2.json";
         String fileName = "data.csv";
         String fileName1 = "data.json";

@@ -21,17 +21,6 @@ import java.util.List;
 public class ParserXML {
     private String fileName;
 
-    static void createXML(String fileName) throws ParserConfigurationException, TransformerException {
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        DocumentBuilder builder = factory.newDocumentBuilder();
-        Document document = builder.newDocument();
-        DOMSource domSource = new DOMSource(document);
-        StreamResult streamResult = new StreamResult(new File(fileName));
-        TransformerFactory transformerFactory = TransformerFactory.newInstance();
-        Transformer transformer = transformerFactory.newTransformer();
-        transformer.transform(domSource, streamResult);
-    }
-
     static List<Employee> parserXML(String fileName) throws ParserConfigurationException, IOException, SAXException {
 
         ArrayList<Employee> employees = new ArrayList<>();
